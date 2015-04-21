@@ -1,0 +1,221 @@
+Native Basic
+Time taken for N = 1	is	0.001525 seconds
+Time taken for N = 10	is	0.024394 seconds
+Time taken for N = 100	is	1.591991 seconds
+Time taken for N = 1000	is	205.644113 seconds
+
+
+Numpy Basic
+Time taken for N = 1	is	0.001841 seconds
+Time taken for N = 10	is	0.002217 seconds
+Time taken for N = 100	is	0.005869 seconds
+Time taken for N = 1000	is	0.348734 seconds
+Time taken for N = 10000	is	68.116247 seconds
+Traceback (most recent call last):
+  File "npMatrixMult.py", line 28, in <module>
+    main()
+  File "npMatrixMult.py", line 12, in main
+    A = np.random.rand(N,N) 
+  File "mtrand.pyx", line 1287, in mtrand.RandomState.rand (numpy/random/mtrand/mtrand.c:11424)
+  File "mtrand.pyx", line 819, in mtrand.RandomState.random_sample (numpy/random/mtrand/mtrand.c:8837)
+  File "mtrand.pyx", line 145, in mtrand.cont0_array (numpy/random/mtrand/mtrand.c:1869)
+MemoryError
+
+Native Sparse
+1)
+Time taken for S = 1 and N = 1	is	0.001513 seconds
+Time taken for S = 1 and N = 10	is	0.009543 seconds
+Time taken for S = 1 and N = 100	is	0.089169 seconds
+Time taken for S = 1 and N = 1000	is	0.893555 seconds
+Time taken for S = 1 and N = 10000	is	9.022938 seconds
+Time taken for S = 2 and N = 10	is	0.011417 seconds
+Time taken for S = 2 and N = 100	is	0.109218 seconds
+Time taken for S = 2 and N = 1000	is	1.096633 seconds
+Time taken for S = 2 and N = 10000	is	11.004563 seconds
+Time taken for S = 4 and N = 10	is	0.015538 seconds
+Time taken for S = 4 and N = 100	is	0.148173 seconds
+Time taken for S = 4 and N = 1000	is	1.482546 seconds
+Time taken for S = 4 and N = 10000	is	15.040120 seconds
+Time taken for S = 8 and N = 10	is	0.023698 seconds
+Time taken for S = 8 and N = 100	is	0.231101 seconds
+Time taken for S = 8 and N = 1000	is	2.314753 seconds
+Time taken for S = 8 and N = 10000	is	24.106004 seconds
+Time taken for S = 16 and N = 100	is	0.400717 seconds
+Time taken for S = 16 and N = 1000	is	4.028908 seconds
+Time taken for S = 16 and N = 10000	is	44.031921 seconds
+Time taken for S = 32 and N = 100	is	0.728213 seconds
+Time taken for S = 32 and N = 1000	is	7.350320 seconds
+Time taken for S = 32 and N = 10000	is	85.629255 seconds
+Time taken for S = 64 and N = 100	is	1.381014 seconds
+Time taken for S = 64 and N = 1000	is	14.097428 seconds
+Time taken for S = 64 and N = 10000	is	164.662327 seconds
+
+2) 
+Time taken for S = 8 and N = 10	is	0.023498 seconds
+Time taken for S = 8 and N = 100	is	0.230949 seconds
+Time taken for S = 8 and N = 1000	is	2.314046 seconds
+Time taken for S = 8 and N = 10000	is	23.901904 seconds
+Time taken for S = 8 and N = 100000	is	299.849669 seconds
+
+Sparse Scipy
+Time taken for S = 1 and N = 1	is	0.009753 seconds
+Time taken for S = 1 and N = 10	is	0.009791 seconds
+Time taken for S = 1 and N = 100	is	0.010530 seconds
+Time taken for S = 1 and N = 1000	is	0.018106 seconds
+Time taken for S = 1 and N = 10000	is	0.100012 seconds
+Time taken for S = 1 and N = 100000	is	0.951406 seconds
+Time taken for S = 1 and N = 1000000	is	17.208355 seconds
+Time taken for S = 2 and N = 10	is	0.011038 seconds
+Time taken for S = 2 and N = 100	is	0.010205 seconds
+Time taken for S = 2 and N = 1000	is	0.016021 seconds
+Time taken for S = 2 and N = 10000	is	0.075175 seconds
+Time taken for S = 2 and N = 100000	is	0.782132 seconds
+Time taken for S = 2 and N = 1000000	is	19.746676 seconds
+Time taken for S = 4 and N = 10	is	0.011890 seconds
+Time taken for S = 4 and N = 100	is	0.010517 seconds
+Time taken for S = 4 and N = 1000	is	0.019653 seconds
+Time taken for S = 4 and N = 10000	is	0.110433 seconds
+Time taken for S = 4 and N = 100000	is	1.259794 seconds
+Time taken for S = 4 and N = 1000000	is	32.360267 seconds
+Time taken for S = 8 and N = 10	is	0.009786 seconds
+Time taken for S = 8 and N = 100	is	0.011088 seconds
+Time taken for S = 8 and N = 1000	is	0.026064 seconds
+Time taken for S = 8 and N = 10000	is	0.173815 seconds
+Time taken for S = 8 and N = 100000	is	2.711123 seconds
+Time taken for S = 8 and N = 1000000	is	59.030042 seconds
+Time taken for S = 16 and N = 100	is	0.012082 seconds
+Time taken for S = 16 and N = 1000	is	0.039512 seconds
+Time taken for S = 16 and N = 10000	is	0.313440 seconds
+Time taken for S = 16 and N = 100000	is	5.919675 seconds
+Time taken for S = 16 and N = 1000000	is	112.760102 seconds
+Time taken for S = 32 and N = 100	is	0.014502 seconds
+Time taken for S = 32 and N = 1000	is	0.060578 seconds
+Time taken for S = 32 and N = 10000	is	0.565990 seconds
+Time taken for S = 32 and N = 100000	is	11.536329 seconds
+Time taken for S = 32 and N = 1000000	is	219.054360 seconds
+Time taken for S = 64 and N = 100	is	0.019260 seconds
+Time taken for S = 64 and N = 1000	is	0.101661 seconds
+Time taken for S = 64 and N = 10000	is	1.097773 seconds
+Time taken for S = 64 and N = 100000	is	22.703177 seconds
+Time taken for S = 64 and N = 1000000	is	521.114548 seconds
+
+Theano Basic - GPU 
+Using gpu device 0: Tesla M2090
+Time taken for N = 1	is	0.081004 seconds
+Time taken for N = 10	is	0.082799 seconds
+Time taken for N = 100	is	0.083527 seconds
+Time taken for N = 1000	is	0.117760 seconds
+Time taken for N = 10000	is	4.077473 seconds
+
+Theano Basic - CPU 
+Time taken for N = 1	is	0.003840 seconds
+Time taken for N = 10	is	0.003777 seconds
+Time taken for N = 100	is	0.005589 seconds
+Time taken for N = 1000	is	0.174472 seconds
+Time taken for N = 10000	is	34.945581 seconds 
+
+Theano Sparse - GPU
+Time taken for S = 1 and N = 1	is	0.142162 seconds
+Time taken for S = 1 and N = 10	is	0.142159 seconds
+Time taken for S = 1 and N = 100	is	0.144064 seconds
+Time taken for S = 1 and N = 1000	is	0.151372 seconds
+Time taken for S = 1 and N = 10000	is	0.226959 seconds
+Time taken for S = 1 and N = 100000	is	1.112671 seconds
+Time taken for S = 1 and N = 1000000	is	11.913400 seconds
+Time taken for S = 2 and N = 1	is	0.142835 seconds
+Time taken for S = 2 and N = 10	is	0.142683 seconds
+Time taken for S = 2 and N = 100	is	0.144157 seconds
+Time taken for S = 2 and N = 1000	is	0.152095 seconds
+Time taken for S = 2 and N = 10000	is	0.221750 seconds
+Time taken for S = 2 and N = 100000	is	1.131614 seconds
+Time taken for S = 2 and N = 1000000	is	13.994675 seconds
+Time taken for S = 4 and N = 1	is	0.143585 seconds
+Time taken for S = 4 and N = 10	is	0.142089 seconds
+Time taken for S = 4 and N = 100	is	0.144190 seconds
+Time taken for S = 4 and N = 1000	is	0.154739 seconds
+Time taken for S = 4 and N = 10000	is	0.250537 seconds
+Time taken for S = 4 and N = 100000	is	1.546960 seconds
+Time taken for S = 4 and N = 1000000	is	22.748856 seconds
+Time taken for S = 8 and N = 1	is	0.141299 seconds
+Time taken for S = 8 and N = 10	is	0.141417 seconds
+Time taken for S = 8 and N = 100	is	0.145203 seconds
+Time taken for S = 8 and N = 1000	is	0.160609 seconds
+Time taken for S = 8 and N = 10000	is	0.306789 seconds
+Time taken for S = 8 and N = 100000	is	2.410596 seconds
+Time taken for S = 8 and N = 1000000	is	40.019722 seconds
+Time taken for S = 16 and N = 1	is	0.145430 seconds
+Time taken for S = 16 and N = 10	is	0.142171 seconds
+Time taken for S = 16 and N = 100	is	0.146229 seconds
+Time taken for S = 16 and N = 1000	is	0.172197 seconds
+Time taken for S = 16 and N = 10000	is	0.414407 seconds
+Time taken for S = 16 and N = 100000	is	4.776639 seconds
+Time taken for S = 16 and N = 1000000	is	79.843479 seconds
+Time taken for S = 32 and N = 1	is	0.148085 seconds
+Time taken for S = 32 and N = 10	is	0.141869 seconds
+Time taken for S = 32 and N = 100	is	0.149022 seconds
+Time taken for S = 32 and N = 1000	is	0.193943 seconds
+Time taken for S = 32 and N = 10000	is	0.625981 seconds
+Time taken for S = 32 and N = 100000	is	9.283194 seconds
+Time taken for S = 32 and N = 1000000	is	152.357863 seconds
+Time taken for S = 64 and N = 1	is	0.155217 seconds
+Time taken for S = 64 and N = 10	is	0.143295 seconds
+Time taken for S = 64 and N = 100	is	0.153705 seconds
+Time taken for S = 64 and N = 1000	is	0.233074 seconds
+Time taken for S = 64 and N = 10000	is	1.043588 seconds
+Time taken for S = 64 and N = 100000	is	17.770983 seconds
+Time taken for S = 64 and N = 1000000	is	298.658910 seconds
+
+
+ 
+Theano Sparse - CPU
+
+Time taken for S = 1 and N = 1	is	0.029746 seconds
+Time taken for S = 1 and N = 10	is	0.030102 seconds
+Time taken for S = 1 and N = 100	is	0.030710 seconds
+Time taken for S = 1 and N = 1000	is	0.037564 seconds
+Time taken for S = 1 and N = 10000	is	0.091089 seconds
+Time taken for S = 1 and N = 100000	is	0.664894 seconds
+Time taken for S = 1 and N = 1000000	is	8.497239 seconds
+Time taken for S = 2 and N = 1	is	0.031225 seconds
+Time taken for S = 2 and N = 10	is	0.030226 seconds
+Time taken for S = 2 and N = 100	is	0.030719 seconds
+Time taken for S = 2 and N = 1000	is	0.037137 seconds
+Time taken for S = 2 and N = 10000	is	0.086185 seconds
+Time taken for S = 2 and N = 100000	is	0.679939 seconds
+Time taken for S = 2 and N = 1000000	is	10.855844 seconds
+Time taken for S = 4 and N = 1	is	0.032059 seconds
+Time taken for S = 4 and N = 10	is	0.030191 seconds
+Time taken for S = 4 and N = 100	is	0.031228 seconds
+Time taken for S = 4 and N = 1000	is	0.040471 seconds
+Time taken for S = 4 and N = 10000	is	0.116681 seconds
+Time taken for S = 4 and N = 100000	is	1.097301 seconds
+Time taken for S = 4 and N = 1000000	is	19.651022 seconds
+Time taken for S = 8 and N = 1	is	0.029848 seconds
+Time taken for S = 8 and N = 10	is	0.030215 seconds
+Time taken for S = 8 and N = 100	is	0.031786 seconds
+Time taken for S = 8 and N = 1000	is	0.047155 seconds
+Time taken for S = 8 and N = 10000	is	0.173186 seconds
+Time taken for S = 8 and N = 100000	is	1.962653 seconds
+Time taken for S = 8 and N = 1000000	is	37.034643 seconds
+Time taken for S = 16 and N = 1	is	0.034512 seconds
+Time taken for S = 16 and N = 10	is	0.030309 seconds
+Time taken for S = 16 and N = 100	is	0.032878 seconds
+Time taken for S = 16 and N = 1000	is	0.059460 seconds
+Time taken for S = 16 and N = 10000	is	0.280045 seconds
+Time taken for S = 16 and N = 100000	is	4.263027 seconds
+Time taken for S = 16 and N = 1000000	is	75.322435 seconds
+Time taken for S = 32 and N = 1	is	0.036261 seconds
+Time taken for S = 32 and N = 10	is	0.030678 seconds
+Time taken for S = 32 and N = 100	is	0.035607 seconds
+Time taken for S = 32 and N = 1000	is	0.081770 seconds
+Time taken for S = 32 and N = 10000	is	0.490565 seconds
+Time taken for S = 32 and N = 100000	is	8.721952 seconds
+Time taken for S = 32 and N = 1000000	is	148.610047 seconds
+Time taken for S = 64 and N = 1	is	0.042970 seconds
+Time taken for S = 64 and N = 10	is	0.031282 seconds
+Time taken for S = 64 and N = 100	is	0.040685 seconds
+Time taken for S = 64 and N = 1000	is	0.121255 seconds
+Time taken for S = 64 and N = 10000	is	0.907454 seconds
+Time taken for S = 64 and N = 100000	is	17.185819 seconds
+Time taken for S = 64 and N = 1000000	is	293.914352 seconds
+
